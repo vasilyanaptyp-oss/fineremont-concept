@@ -2,22 +2,22 @@
 <html lang="uk">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="dark">
 <title>Файний Ремонт — ремонт квартир, будинків та офісів у Києві</title>
-<meta name="description" content="Файний Ремонт: ремонт квартир, будинків та офісів у Києві з 2006 року. Договір, детальний кошторис, гарантія 1 рік, прораб на об'єкті. Понад 20 років досвіду.">
+<meta name="description" content="Файний Ремонт: ремонт квартир, будинків та офісів у Києві. Понад 20 років, офіційний договір, кошторис до початку робіт, гарантія на роботи. Офіс на Академмістечку.">
 <meta name="theme-color" content="#0a0a0b">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="uk_UA">
 <meta property="og:title" content="Файний Ремонт — ремонт, який роблять файно">
-<meta property="og:description" content="Квартири, будинки та офіси під ключ у Києві. Договір, кошторис, гарантія 1 рік.">
-<meta property="og:image" content="https://vasilyanaptyp-oss.github.io/fineremont-concept/assets/img/kynh2.webp">
+<meta property="og:description" content="Квартири, будинки та офіси під ключ у Києві. Договір, кошторис до старту, гарантія на роботи.">
+<meta property="og:image" content="https://vasilyanaptyp-oss.github.io/fineremont-concept/assets/img/k-venge-1200.webp">
 <meta property="og:url" content="https://vasilyanaptyp-oss.github.io/fineremont-concept/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="preload" as="image" href="assets/img/kynh2.webp">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
 <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -25,24 +25,19 @@
 
 <a class="skip" href="#zmist">Перейти до змісту</a>
 
-<div class="progress" id="progress" aria-hidden="true"></div>
-
 <header class="hdr" id="hdr">
   <div class="hdr__in">
-    <a class="brand" href="#top">
-      <span class="brand__mark" aria-hidden="true">Ф</span>
-      <span class="brand__t"><b>Файний</b> Ремонт</span>
-    </a>
+    <a class="brand" href="#top"><span class="brand__mark" aria-hidden="true">Ф</span><span class="brand__t"><b>Файний</b> Ремонт</span></a>
     <nav class="nav" aria-label="Головна навігація">
       <a href="#poslugy">Послуги</a>
-      <a href="#roboty">Роботи</a>
       <a href="#proces">Як працюємо</a>
+      <a href="#roboty">Об'єкти</a>
       <a href="#vidguky">Відгуки</a>
       <a href="#kontakty">Контакти</a>
     </nav>
     <div class="hdr__act">
       <a class="tel" href="tel:+380974400700" aria-label="Зателефонувати (097) 44 00 700"><svg class="tel__ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7 2 2 0 0 1 6.5 3.5Z"/></svg><span class="tel__n">(097) 44 00 700</span></a>
-      <a class="btn btn--sm" href="#zamovyty">Замовити ремонт</a>
+      <a class="btn btn--sm hdr__cta" href="#zamovyty">Отримати кошторис</a>
       <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Відкрити меню"><span></span><span></span></button>
     </div>
   </div>
@@ -50,15 +45,15 @@
 
 <div class="mnav" id="mnav" hidden>
   <nav aria-label="Мобільне меню">
-    <a href="#poslugy"><b>Послуги</b><i>10 видів робіт</i></a>
-    <a href="#roboty"><b>Роботи</b><i>Кухні, спальні, санвузли</i></a>
-    <a href="#proces"><b>Як працюємо</b><i>Від огляду до здачі</i></a>
+    <a href="#poslugy"><b>Послуги</b><i>Від демонтажу до ключа</i></a>
+    <a href="#proces"><b>Як працюємо</b><i>Огляд, договір, роботи, здача</i></a>
+    <a href="#roboty"><b>Об'єкти</b><i>Кухні, спальні, санвузли</i></a>
     <a href="#vidguky"><b>Відгуки</b><i>2014 → 2025</i></a>
     <a href="#kontakty"><b>Контакти</b><i>Академмістечко, Київ</i></a>
   </nav>
-  <div class="mnav__tel">
-    <a class="btn btn--ghost" href="tel:+380974400700">(097) 44 00 700</a>
-    <a class="btn" href="viber://chat?number=%2B380974400700">Написати у Viber</a>
+  <div class="mnav__act">
+    <a class="btn btn--ghost" href="tel:+380974400700">Подзвонити (097) 44 00 700</a>
+    <a class="btn" href="#zamovyty">Отримати кошторис</a>
   </div>
 </div>
 
@@ -67,132 +62,107 @@
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
   <div class="hero__pin">
-    <div class="hero__bg" aria-hidden="true"></div>
-    <div class="hero__copy">
-      <p class="eyebrow"><span class="dot"></span>Київ · понад 20 років на ринку</p>
-      <h1 class="hero__h" id="heroH">
-        <span class="w">Ремонт,</span> <span class="w">який</span> <span class="w">роблять</span><br><span class="w hl">файно.</span>
-      </h1>
-      <p class="hero__sub">Квартири, будинки та офіси під ключ. Офіційний договір, детальний кошторис, гарантія 1 рік і прораб, який щодня на об'єкті.</p>
-      <div class="hero__cta">
-        <a class="btn btn--lg" href="#zamovyty">Розрахувати кошторис</a>
-        <a class="btn btn--lg btn--ghost" href="#roboty">Дивитись роботи</a>
+    <div class="hero__in">
+      <div class="hero__copy">
+        <p class="eyebrow">Ремонт квартир, будинків та офісів · Київ</p>
+        <h1 class="hero__h"><span class="l"><span class="w">Ремонт,</span></span> <span class="l"><span class="w">який</span></span><br><span class="l"><span class="w">роблять</span></span> <span class="l"><span class="w hl">файно.</span></span></h1>
+        <p class="hero__sub">Понад 20 років у Києві. Офіційний договір, кошторис до початку робіт, гарантія на роботи і вузькі спеціалісти на кожному етапі.</p>
+        <div class="hero__cta">
+          <a class="btn btn--lg" href="#zamovyty">Отримати кошторис</a>
+          <a class="hero__tel" href="tel:+380974400700">або телефонуйте: <b>(097) 44 00 700</b></a>
+        </div>
+      </div>
+      <div class="stage" id="stage" aria-hidden="true">
+        <div class="stage__inner" id="stageInner">
+          <figure class="c3 c3--b"><img src="assets/img/v-parket-600.webp" srcset="assets/img/v-parket-600.webp 600w, assets/img/v-parket-1200.webp 1200w" sizes="(max-width: 899px) 0px, 30vw" alt="" loading="eager" decoding="async"></figure>
+          <figure class="c3 c3--main"><img src="assets/img/k-venge-600.webp" srcset="assets/img/k-venge-600.webp 600w, assets/img/k-venge-1200.webp 1200w" sizes="(max-width: 899px) 100vw, 34vw" alt="" loading="eager" fetchpriority="high" decoding="async"></figure>
+          <figure class="c3 c3--c"><img src="assets/img/k-mozaika-600.webp" srcset="assets/img/k-mozaika-600.webp 600w, assets/img/k-mozaika-1200.webp 1200w" sizes="(max-width: 899px) 0px, 30vw" alt="" loading="eager" decoding="async"></figure>
+        </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="stage" id="stage" aria-hidden="true">
-      <div class="stage__inner" id="stageInner">
-        <figure class="c3"><img src="assets/img/kynh2-800.webp" alt="" loading="eager"></figure>
-        <figure class="c3"><img src="assets/img/spaln2-800.webp" alt="" loading="eager"></figure>
-        <figure class="c3"><img src="assets/img/DSC_0484-800.webp" alt="" loading="eager"></figure>
-        <figure class="c3"><img src="assets/img/gostin3-800.webp" alt="" loading="eager"></figure>
-        <figure class="c3"><img src="assets/img/102-800.webp" alt="" loading="eager"></figure>
-        <figure class="c3"><img src="assets/img/slide-1-800.webp" alt="" loading="eager"></figure>
-        <figure class="c3"><img src="assets/img/detsk1-800.webp" alt="" loading="eager"></figure>
-      </div>
+<!-- ============ FACTS ============ -->
+<section class="facts" aria-label="Коротко про компанію">
+  <div class="wrap facts__grid">
+    <div class="fact"><b>20+</b><span>років ремонтуємо Київ</span></div>
+    <div class="fact"><b>Сотні</b><span>вдячних клієнтів і об'єктів</span></div>
+    <div class="fact"><b>Договір</b><span>і кошторис до початку робіт</span></div>
+    <div class="fact"><b>Гарантія</b><span>на всі виконані роботи</span></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="pro-nas">
+  <div class="wrap about__grid">
+    <h2>Компанія з офісом на Академмістечку, а не бригада з оголошення.</h2>
+    <div class="about__t">
+      <p>Ремонт квартир, офісів і будинків — наш основний напрям понад 20 років. Працюємо за офіційним договором, кошторис рахуємо до початку робіт, на кожному етапі — вузькі спеціалісти: плиточник, сантехнік, електрик, маляр.</p>
+      <p>Беремося за складне: перепланування, нестандартні санвузли, ремонт у квартирі, де живе сім'я. Клієнти повертаються з наступною кухнею, квартирою чи офісом — і це наш головний показник.</p>
     </div>
-
-    <div class="hero__scroll" aria-hidden="true"><span></span>гортайте</div>
   </div>
 </section>
 
-<!-- ============ NUMBERS ============ -->
-<section class="nums" aria-label="Цифри">
-  <div class="wrap nums__grid">
-    <div class="num"><b><span class="cnt" data-to="20">0</span>+</b><span>років ремонтуємо Київ</span></div>
-    <div class="num"><b><span class="cnt" data-to="24">0</span></b><span>розгорнутих відгуків, 2014–2025</span></div>
-    <div class="num"><b><span class="cnt" data-to="10">0</span></b><span>видів робіт однією командою</span></div>
-    <div class="num"><b><span class="cnt" data-to="1">0</span> рік</b><span>гарантії на кожен об'єкт</span></div>
-  </div>
-</section>
+<!-- ============ LIGHT CHAPTER: SERVICES + PROCESS ============ -->
+<div class="chapter" id="chapter">
 
-<!-- ============ MANIFESTO (word reveal) ============ -->
-<section class="mani" id="pro-nas">
-  <div class="wrap">
-    <p class="mani__t" id="mani">Ми не «бригада з оголошення». Це компанія з офісом на Академмістечку, договором, кошторисом до копійки та директором, який відповідає на дзвінки і після здачі об'єкта. Так працюємо з 2006 року — і клієнти повертаються з другою квартирою, кухнею чи офісом.</p>
-    <p class="mani__sig">Василь Богданович Серкиз, директор</p>
-  </div>
-</section>
-
-<!-- ============ SERVICES (horizontal) ============ -->
 <section class="svc" id="poslugy">
-  <div class="svc__head wrap">
-    <p class="eyebrow">Послуги</p>
-    <h2>Усе, що потрібно між «чорновою» та «ключем».</h2>
-    <p class="lead">Одна команда, один прораб, один договір. Не треба збирати десять майстрів і сперечатися, хто зіпсував стіну.</p>
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">Послуги</p>
+      <h2>Усе між «чорновою» та «ключем» — одна команда, один договір.</h2>
+    </div>
+    <div class="svc__grid">
+      <article class="s"><i>01</i><h3>Демонтаж і монтаж</h3><p>Знесення перегородок і старих покриттів, нові конструкції, двері, шафи. За будівельними нормами.</p></article>
+      <article class="s"><i>02</i><h3>Підлога і плитка</h3><p>Паркет, ламінат, стяжка. Плитка й мозаїка у санвузлах і на кухнях, включно з нестандартними стінами.</p></article>
+      <article class="s"><i>03</i><h3>Стелі та стіни</h3><p>Гіпсокартонні стелі, арки, ніші. Штукатурка, шпаклівка, фарбування, шпалери.</p></article>
+      <article class="s"><i>04</i><h3>Сантехніка та електрика</h3><p>Заміна комунікацій, бойлери, фільтри. Проводка, розетки, освітлення, окремі лінії на техніку.</p></article>
+      <article class="s"><i>05</i><h3>Ремонт під ключ</h3><p>Квартири, новобудови, будинки — від демонтажу до прибирання. Косметичний, капітальний, євроремонт.</p></article>
+      <article class="s"><i>06</i><h3>Офіси та нежитлові</h3><p>Гіпсокартон, електрика, малярні роботи, дизайн інтер'єру офісу. У стислі терміни.</p></article>
+    </div>
+    <p class="svc__note">Знижка 10 % на комплексний ремонт квартири, офісу чи будинку.</p>
   </div>
-  <div class="hs" id="hs">
-    <div class="hs__track" id="hsTrack">
-      <article class="sc"><img src="assets/img/w2017-800.webp" alt="Демонтаж старого оздоблення у квартирі" loading="lazy"><div class="sc__b"><i>01</i><h3>Демонтажні роботи</h3><p>Знесення перегородок, санкабін, старих покриттів. За будівельними нормами, без шкоди несучим стінам.</p></div></article>
-      <article class="sc"><img src="assets/img/DSC_0436-800.webp" alt="Вбудована шафа-купе після монтажу" loading="lazy"><div class="sc__b"><i>02</i><h3>Монтажні роботи</h3><p>Перегородки, двері, шафи, конструкції за дизайн-проєктом.</p></div></article>
-      <article class="sc"><img src="assets/img/gostin1-800.webp" alt="Паркетна дошка у вітальні" loading="lazy"><div class="sc__b"><i>03</i><h3>Укладка підлоги</h3><p>Паркет, ламінат, плитка, стяжка. Рівно, тихо, без скрипу.</p></div></article>
-      <article class="sc"><img src="assets/img/1008-800.webp" alt="Мозаїка у ванній кімнаті" loading="lazy"><div class="sc__b"><i>04</i><h3>Плиточні роботи</h3><p>Плитка й мозаїка у санвузлах і на кухнях, включно з нестандартними стінами.</p></div></article>
-      <article class="sc"><img src="assets/img/eurorem1-800.webp" alt="Гіпсокартонна стеля з підсвіткою" loading="lazy"><div class="sc__b"><i>05</i><h3>Гіпсокартонні роботи</h3><p>Стелі, арки, ніші, короби. Рівні площини під фарбу.</p></div></article>
-      <article class="sc"><img src="assets/img/detsk1-800.webp" alt="Пофарбовані стіни дитячої кімнати" loading="lazy"><div class="sc__b"><i>06</i><h3>Малярно-штукатурні</h3><p>Штукатурка, шпаклівка, фарбування, шпалери. Радимо відтінок, якщо «так буде негарно».</p></div></article>
-      <article class="sc"><img src="assets/img/van1-800.webp" alt="Санвузол після заміни сантехніки" loading="lazy"><div class="sc__b"><i>07</i><h3>Сантехнічні роботи</h3><p>Заміна комунікацій, бойлери, фільтри, встановлення сантехніки — навіть коли місця критично мало.</p></div></article>
-      <article class="sc"><img src="assets/img/slide-1-800.webp" alt="Спальня з новим освітленням" loading="lazy"><div class="sc__b"><i>08</i><h3>Електромонтажні</h3><p>Проводка, розетки, освітлення, окремі лінії на техніку. Дроти непомітні.</p></div></article>
-      <article class="sc"><img src="assets/img/2-800.webp" alt="Кухня після комплексного ремонту" loading="lazy"><div class="sc__b"><i>09</i><h3>Євроремонт під ключ</h3><p>Від демонтажу до прибирання. Матеріали купуємо ми, ви не витрачаєте час на приймання.</p></div></article>
-      <article class="sc"><img src="assets/img/gostin3-800.webp" alt="Приміщення після ремонту" loading="lazy"><div class="sc__b"><i>10</i><h3>Офіси та нежитлові</h3><p>Гіпсокартон, електрика, малярні роботи, дизайн інтер'єру офісу. Працюємо у стислі терміни.</p></div></article>
-      <article class="sc sc--cta"><div class="sc__b"><h3>Не знайшли своє?</h3><p>Напишіть, що треба зробити. Для нас немає нічого неможливого — це не гасло, це 20 років практики.</p><a class="btn" href="#zamovyty">Запитати</a></div></article>
+</section>
+
+<section class="proc" id="proces">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">Як працюємо</p>
+      <h2>Чотири кроки. Ціна відома до початку робіт.</h2>
+    </div>
+    <div class="steps">
+      <article class="step"><span class="step__n">Крок 01</span><div class="step__c"><h3>Огляд і кошторис</h3><p>Приїжджаємо, оглядаємо об'єкт і пропонуємо варіанти — часто простіші й дешевші, ніж ви планували. Рахуємо детальний кошторис за прайсом: ціну можна перевірити наперед.</p></div></article>
+      <article class="step"><span class="step__n">Крок 02</span><div class="step__c"><h3>Договір і матеріали</h3><p>Офіційний договір з гарантією на роботи. Радимо, де брати перевіреного виробника, а де не варто переплачувати, і можемо закупити матеріали самі.</p></div></article>
+      <article class="step"><span class="step__n">Крок 03</span><div class="step__c"><h3>Роботи</h3><p>Виконроб контролює об'єкт і відповідає за якість. На кожному етапі — свій спеціаліст. Частковий ремонт робимо і в квартирі, де живе сім'я.</p></div></article>
+      <article class="step"><span class="step__n">Крок 04</span><div class="step__c"><h3>Здача</h3><p>Прибираємо після себе і передаємо об'єкт. Питання після здачі — телефонуйте, ми на зв'язку.</p></div></article>
     </div>
   </div>
 </section>
 
-<!-- ============ 3D GALLERY ============ -->
+</div>
+
+<!-- ============ GALLERY ============ -->
 <section class="gal" id="roboty">
   <div class="gal__pin">
-    <div class="gal__head wrap">
-      <p class="eyebrow">Наші роботи</p>
-      <h2>Гортайте — це зроблено нашими руками.</h2>
+    <div class="wrap sec__head sec__head--c">
+      <p class="eyebrow">Наші об'єкти</p>
+      <h2>Кухні, спальні, санвузли, вітальні.</h2>
+      <p class="lead">Десять об'єктів з нашої галереї. Повна галерея — <a href="https://fineremont.kiev.ua/gallery/" target="_blank" rel="noopener">на fineremont.kiev.ua ↗</a></p>
     </div>
     <div class="ring-wrap" id="ringWrap">
       <div class="ring" id="ring">
-        <figure><img src="assets/img/kynh2-800.webp" alt="Кухня з глянцевими фасадами" loading="lazy"><figcaption>Кухня</figcaption></figure>
-        <figure><img src="assets/img/spaln2-800.webp" alt="Спальня з дерев'яними панелями" loading="lazy"><figcaption>Спальня</figcaption></figure>
-        <figure><img src="assets/img/DSC_0484-800.webp" alt="Кухня з мозаїчним фартухом" loading="lazy"><figcaption>Кухня</figcaption></figure>
-        <figure><img src="assets/img/gostin3-800.webp" alt="Вітальня у сірих тонах" loading="lazy"><figcaption>Вітальня</figcaption></figure>
-        <figure><img src="assets/img/22-800.webp" alt="Кухня з видом на місто" loading="lazy"><figcaption>Кухня</figcaption></figure>
-        <figure><img src="assets/img/spaln3-800.webp" alt="Класична спальня" loading="lazy"><figcaption>Спальня</figcaption></figure>
-        <figure><img src="assets/img/2-800.webp" alt="Кухня з барною стійкою" loading="lazy"><figcaption>Кухня-студія</figcaption></figure>
-        <figure><img src="assets/img/DSC_0490-800.webp" alt="Кухонний фартух з мозаїки" loading="lazy"><figcaption>Плитка</figcaption></figure>
-        <figure><img src="assets/img/slide-1-800.webp" alt="Спальня з шафою-купе" loading="lazy"><figcaption>Спальня</figcaption></figure>
-        <figure><img src="assets/img/1-800.webp" alt="Кухня венге" loading="lazy"><figcaption>Кухня</figcaption></figure>
-        <figure><img src="assets/img/102-800.webp" alt="Ванна з мозаїкою" loading="lazy"><figcaption>Санвузол</figcaption></figure>
-        <figure><img src="assets/img/gostin2-800.webp" alt="Вітальня у класичному стилі" loading="lazy"><figcaption>Вітальня</figcaption></figure>
+        <figure><img src="assets/img/k-vengetwo-600.webp" srcset="assets/img/k-vengetwo-600.webp 600w, assets/img/k-vengetwo-1200.webp 1200w" sizes="(max-width: 899px) 78vw, 30vw" alt="Кухня венге з глянцевими фасадами" loading="lazy" decoding="async"><figcaption>Кухня · 2015</figcaption></figure>
+        <figure><img src="assets/img/spalnia-600.webp" srcset="assets/img/spalnia-600.webp 600w, assets/img/spalnia-1200.webp 1200w" sizes="(max-width: 899px) 78vw, 30vw" alt="Спальня з шафою-купе" loading="lazy" decoding="async"><figcaption>Спальня · 2014</figcaption></figure>
+        <figure><img src="assets/img/k-bar-600.webp" srcset="assets/img/k-bar-600.webp 600w, assets/img/k-bar-1200.webp 1200w" sizes="(max-width: 899px) 78vw, 30vw" alt="Кухня-студія з барною стійкою" loading="lazy" decoding="async"><figcaption>Кухня-студія · 2014</figcaption></figure>
+        <figure><img src="assets/img/vanna-mozaika-600.webp" srcset="assets/img/vanna-mozaika-600.webp 600w, assets/img/vanna-mozaika-1200.webp 1200w" sizes="(max-width: 899px) 78vw, 30vw" alt="Ванна з мозаїкою" loading="lazy" decoding="async"><figcaption>Санвузол · 2014</figcaption></figure>
+        <figure><img src="assets/img/shafa-600.webp" srcset="assets/img/shafa-600.webp 600w, assets/img/shafa-1200.webp 1200w" sizes="(max-width: 899px) 78vw, 30vw" alt="Вбудована шафа-купе" loading="lazy" decoding="async"><figcaption>Шафа-купе · 2015</figcaption></figure>
+        <figure><img src="assets/img/v-klasyka-600.webp" srcset="assets/img/v-klasyka-600.webp 600w, assets/img/v-klasyka-1200.webp 1200w" sizes="(max-width: 899px) 78vw, 30vw" alt="Вітальня у класичному стилі" loading="lazy" decoding="async"><figcaption>Вітальня · 2014</figcaption></figure>
+        <figure><img src="assets/img/k-vikno-600.webp" srcset="assets/img/k-vikno-600.webp 600w" sizes="(max-width: 899px) 78vw, 30vw" alt="Кухня з видом на місто" loading="lazy" decoding="async"><figcaption>Кухня · 2015</figcaption></figure>
+        <figure><img src="assets/img/stelia-600.webp" srcset="assets/img/stelia-600.webp 600w, assets/img/stelia-1200.webp 1200w" sizes="(max-width: 899px) 78vw, 30vw" alt="Гіпсокартонна стеля з підсвіткою" loading="lazy" decoding="async"><figcaption>Стеля · 2014</figcaption></figure>
+        <figure><img src="assets/img/vanna-600.webp" srcset="assets/img/vanna-600.webp 600w, assets/img/vanna-1200.webp 1200w" sizes="(max-width: 899px) 78vw, 30vw" alt="Санвузол після ремонту" loading="lazy" decoding="async"><figcaption>Санвузол · 2014</figcaption></figure>
+        <figure><img src="assets/img/kamin-600.webp" srcset="assets/img/kamin-600.webp 600w" sizes="(max-width: 899px) 78vw, 30vw" alt="Вітальня з каміном" loading="lazy" decoding="async"><figcaption>Вітальня · 2017</figcaption></figure>
       </div>
-    </div>
-    <p class="gal__hint" aria-hidden="true">← тягніть або гортайте →</p>
-  </div>
-</section>
-
-<!-- ============ PROCESS (stacked cards) ============ -->
-<section class="proc" id="proces">
-  <div class="wrap">
-    <div class="proc__head">
-      <p class="eyebrow">Як працюємо</p>
-      <h2>Чотири кроки. Жодних сюрпризів у рахунку.</h2>
-    </div>
-    <div class="steps">
-      <article class="step">
-        <div class="step__n">01</div>
-        <div class="step__c"><h3>Огляд і кошторис</h3><p>Приїжджаємо, дивимось об'єкт, за кілька хвилин пропонуємо варіанти — інколи такі, що з однокімнатної виходить двокімнатна. Рахуємо детальний кошторис: ціна не «з повітря», її можна перевірити наперед.</p></div>
-        <img src="assets/img/w2017-800.webp" alt="" loading="lazy">
-      </article>
-      <article class="step">
-        <div class="step__n">02</div>
-        <div class="step__c"><h3>Договір і гарантія</h3><p>Офіційний договір з гарантією обслуговування 1 рік. Матеріали закуповуємо самі й радимо, де брати перевіреного виробника, а де не варто переплачувати.</p></div>
-        <img src="assets/img/DSC_0436-800.webp" alt="" loading="lazy">
-      </article>
-      <article class="step">
-        <div class="step__n">03</div>
-        <div class="step__c"><h3>Роботи з прорабом</h3><p>Прораб щодня на об'єкті. Майстри пунктуальні, без шкідливих звичок, працюють точно за кошторисом і не бояться кривих стін. Можна жити у квартирі під час часткового ремонту.</p></div>
-        <img src="assets/img/DSC_0490-800.webp" alt="" loading="lazy">
-      </article>
-      <article class="step">
-        <div class="step__n">04</div>
-        <div class="step__c"><h3>Прибирання і здача</h3><p>Прибираємо після себе — аж до вимитої підлоги. Після здачі директор відповідає на дзвінки і допомагає з питаннями експлуатації. Тому й повертаються.</p></div>
-        <img src="assets/img/kynh2-800.webp" alt="" loading="lazy">
-      </article>
     </div>
   </div>
 </section>
@@ -200,69 +170,18 @@
 <!-- ============ REVIEWS ============ -->
 <section class="rev" id="vidguky">
   <div class="wrap">
-    <div class="rev__head">
+    <div class="sec__head">
       <p class="eyebrow">Відгуки</p>
-      <h2>Одинадцять років відгуків. Мовою клієнтів, без правок.</h2>
-      <p class="lead">Усе, що нижче, написали клієнти на нашому сайті з 2014 по 2025 рік.</p>
+      <h2>Одинадцять років відгуків. Мовою оригіналу.</h2>
+      <p class="lead">Скорочені цитати з відгуків на нашому сайті, 2014–2025. Повні тексти — <a href="https://fineremont.kiev.ua/feedback/" target="_blank" rel="noopener">на сторінці відгуків ↗</a></p>
     </div>
-
     <div class="rev__grid">
-      <blockquote class="q q--big">
-        <p>«Будучи сам строителем, я могу квалифицированно оценить качество работы и должен признать, что я более чем удовлетворён итогами работы. Эта команда действительно работает ФАЙНО.»</p>
-        <footer><b>Борис Терентьєв</b><span>дійсний член Академії будівництва України · 2015</span></footer>
-      </blockquote>
-      <blockquote class="q">
-        <p>«В компании существует четкий прайс со сметой и счёт в итоге берётся не из воздуха. Компания даёт гарантию на 1 год. Строители очень чистоплотны — я даже не заказывала клининг после стройки.»</p>
-        <footer><b>Татьяна</b><span>три об'єкти · 2017</span></footer>
-      </blockquote>
-      <blockquote class="q">
-        <p>«Офіційний договір з гарантією обслуговування, деталізований обрахунок робіт. Команда майстрів має великий багаж досвіду та порад, які оптимізують кожний квадрат без зайвих витрат.»</p>
-        <footer><b>Сергій</b><span>ванна, кухня, водогін, електрика · 2019</span></footer>
-      </blockquote>
-      <blockquote class="q">
-        <p>«Там, де інші майстри відмовлялися, команда все зробила на відмінно, навіть з усіма складнощами — критично мало місця було.»</p>
-        <footer><b>Юлія</b><span>фільтр, бойлер · 2017</span></footer>
-      </blockquote>
-      <blockquote class="q">
-        <p>«Дуже задоволені роботою з ремонту санвузла! Майстри завжди були на зв'язку, швидко вирішували всі питання. Щиро рекомендуємо цю команду як надійних професіоналів!»</p>
-        <footer><b>Олена</b><span>санвузол · 2025</span></footer>
-      </blockquote>
-      <blockquote class="q">
-        <p>«Вперше зустрічаю таких відповідальних і безвідмовних ремонтників. Після себе завжди прибирали, були дуже ввічливі. По грошам теж дуже доступно.»</p>
-        <footer><b>Анна</b><span>стеля · 2014</span></footer>
-      </blockquote>
+      <blockquote class="q q--big"><p>«Дуже задоволені роботою компанії з ремонту санвузла! Все виконано якісно, з увагою до деталей і відповідальним підходом. Майстри завжди були на зв'язку… Щиро рекомендуємо цю команду як надійних професіоналів!»</p><footer><b>Олена</b><span>санвузол · червень 2025</span></footer></blockquote>
+      <blockquote class="q"><p>«Офіційний договір з гарантією обслуговування, деталізований обрахунок робіт. Команда майстрів дійсно має великий багаж досвіду та порад, які значно оптимізують кожний квадрат, без зайвих витрат.»</p><footer><b>Сергій</b><span>ванна, кухня, водогін, електрика · 2019</span></footer></blockquote>
+      <blockquote class="q"><p>«Там, де інші майстри відмовлялися, команда Файний ремонт все зробили на відмінно, навіть з усіма складнощами (критично мало місця було).»</p><footer><b>Юлія</b><span>фільтр, бойлер · 2017</span></footer></blockquote>
+      <blockquote class="q"><p>«Будучи сам строителем, я могу квалифицированно оценить качество работы и должен признать, что я более чем удовлетворён… Эта команда действительно работает ФАЙНО.»</p><footer><b>Борис Терентьєв</b><span>дійсний член Академії будівництва України · 2015</span></footer></blockquote>
+      <blockquote class="q"><p>«В компании существует четкий прайс со сметой и счёт в итоге берётся не из воздуха… Строители очень чистоплотны. Всегда убирают после себя.»</p><footer><b>Татьяна</b><span>три об'єкти · 2017</span></footer></blockquote>
     </div>
-  </div>
-
-  <div class="marq" aria-hidden="true">
-    <div class="marq__track">
-      <span>Все оговоренное — цена, сроки, качество — было выполнено. <i>Роман, 2015</i></span>
-      <span>Цены приемлемые и главное соответствуют качеству. <i>Виктория, 2017</i></span>
-      <span>Ми встигли до Нового року! <i>Лариса, 2018</i></span>
-      <span>Придраться нету к чему, сервис и гарантия на высшем уровне. <i>Антон, 2014</i></span>
-      <span>Хлопці професіонали, дуже добре знають свою справу! <i>Лідія Іванівна, 2015</i></span>
-      <span>Пригласили опять этих же ребят. <i>Руслан, 2014</i></span>
-      <span>Плиточник Андрій дуже акуратно виклав, прибирав за собою. <i>Анна, 2018</i></span>
-      <span>Качественно и сравнительно недорого. <i>Борис, 2017</i></span>
-      <span>Все оговоренное — цена, сроки, качество — было выполнено. <i>Роман, 2015</i></span>
-      <span>Цены приемлемые и главное соответствуют качеству. <i>Виктория, 2017</i></span>
-      <span>Ми встигли до Нового року! <i>Лариса, 2018</i></span>
-      <span>Придраться нету к чему, сервис и гарантия на высшем уровне. <i>Антон, 2014</i></span>
-      <span>Хлопці професіонали, дуже добре знають свою справу! <i>Лідія Іванівна, 2015</i></span>
-      <span>Пригласили опять этих же ребят. <i>Руслан, 2014</i></span>
-      <span>Плиточник Андрій дуже акуратно виклав, прибирав за собою. <i>Анна, 2018</i></span>
-      <span>Качественно и сравнительно недорого. <i>Борис, 2017</i></span>
-    </div>
-  </div>
-</section>
-
-<!-- ============ GUARANTEES ============ -->
-<section class="gar">
-  <div class="wrap gar__grid">
-    <div class="gar__i"><b>Договір</b><p>Офіційний, з гарантією обслуговування. ФОП Серкиз В.Б., Київ.</p></div>
-    <div class="gar__i"><b>Кошторис</b><p>Деталізований, до початку робіт. Рахунок збігається з кошторисом.</p></div>
-    <div class="gar__i"><b>1 рік гарантії</b><p>На кожен об'єкт. І дзвінки після здачі — не проблема.</p></div>
-    <div class="gar__i"><b>−5 % / −10 %</b><p>5 % при замовленні через сайт. 10 % на комплексний ремонт квартири, офісу чи будинку.</p></div>
   </div>
 </section>
 
@@ -270,38 +189,41 @@
 <section class="ord" id="zamovyty">
   <div class="wrap ord__grid">
     <div class="ord__copy">
-      <p class="eyebrow eyebrow--light">Замовити ремонт</p>
-      <h2>Розкажіть, що треба зробити. Відповімо за кілька хвилин.</h2>
-      <p class="lead">Залиште номер — передзвонимо, домовимось про огляд і порахуємо кошторис. Або одразу пишіть у Viber.</p>
-      <div class="ord__contacts">
-        <a href="tel:+380974400700">(097) 44 00 700</a>
-        <a href="tel:+380931276521">(093) 127 65 21</a>
-        <a href="tel:+380442226625">(044) 222 66 25</a>
-        <a class="btn btn--viber" href="viber://chat?number=%2B380974400700">Написати у Viber</a>
-      </div>
+      <p class="eyebrow">Отримати кошторис</p>
+      <h2>Розкажіть, що треба зробити. Передзвонимо в робочий час.</h2>
+      <p class="lead">Огляд об'єкта, кошторис за прайсом, договір. Або одразу пишіть у Viber — відповімо, щойно побачимо.</p>
+      <dl class="ord__contacts">
+        <div><dt>Василь Богданович, Viber і телефон</dt><dd><a href="tel:+380974400700">(097) 44 00 700</a></dd></div>
+        <div><dt>Офіс</dt><dd><a href="tel:+380442226625">(044) 222 66 25</a></dd></div>
+        <div><dt>Пошта</dt><dd><a href="mailto:fineremont@ukr.net">fineremont@ukr.net</a></dd></div>
+      </dl>
+      <a class="btn btn--ghost ord__viber" href="viber://chat?number=%2B380974400700">Написати у Viber</a>
     </div>
-    <form class="form" action="#" method="post" onsubmit="event.preventDefault();this.classList.add('is-sent');">
+    <form class="form" action="#" method="post" onsubmit="event.preventDefault();this.classList.add('is-sent');this.querySelector('button').disabled=true;">
       <label><span>Ваше ім'я</span><input type="text" name="name" autocomplete="name" required></label>
       <label><span>Телефон</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+380" required></label>
       <label><span>Що потрібно зробити</span><textarea name="msg" rows="4" placeholder="Наприклад: санвузол під ключ, 4 м², Академмістечко"></textarea></label>
-      <button class="btn btn--lg" type="submit">Надіслати заявку <em>−5 % через сайт</em></button>
-      <p class="form__ok" aria-live="polite">Дякуємо! Передзвонимо найближчим часом.</p>
-      <p class="form__note">Це макет: форма не надсилає даних. На живому сайті заявка піде на fineremont@ukr.net та у Viber.</p>
+      <label class="check"><input type="checkbox" name="consent" required><span>Погоджуюсь на обробку персональних даних</span></label>
+      <button class="btn btn--lg" type="submit">Отримати кошторис</button>
+      <p class="form__disc">Знижка 5 % при замовленні через сайт.</p>
+      <p class="form__ok" aria-live="polite">Дякуємо! Передзвонимо в робочий час.</p>
+      <p class="form__note">Форма запрацює після перенесення на ваш домен.</p>
     </form>
   </div>
 </section>
 
 </main>
 
-<!-- ============ FOOTER ============ -->
 <footer class="ftr" id="kontakty">
   <div class="wrap ftr__grid">
-    <div class="ftr__col">
-      <a class="brand brand--ftr" href="#top"><span class="brand__mark" aria-hidden="true">Ф</span><span class="brand__t"><b>Файний</b> Ремонт</span></a>
-      <p>Ремонт квартир, будинків та офісів у Києві з 2006 року.</p>
+    <div class="ftr__col ftr__col--brand">
+      <a class="brand" href="#top"><span class="brand__mark" aria-hidden="true">Ф</span><span class="brand__t"><b>Файний</b> Ремонт</span></a>
+      <p>ФОП Серкиз Василь Богданович<br>код 2886823090</p>
+      <p>03142, Київ, бульвар Академіка Вернадського 67, офіс 67<br>метро Академмістечко</p>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D0%BA%D0%B0+%D0%92%D0%B5%D1%80%D0%BD%D0%B0%D0%B4%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE+67+%D0%9A%D0%B8%D1%97%D0%B2" target="_blank" rel="noopener">Показати на карті ↗</a>
     </div>
     <div class="ftr__col">
-      <h3 class="ftr__h">Контакти</h3>
+      <h3 class="ftr__h">Телефони</h3>
       <a href="tel:+380974400700">(097) 44 00 700</a>
       <a href="tel:+380931276521">(093) 127 65 21</a>
       <a href="tel:+380442226625">(044) 222 66 25</a>
@@ -310,25 +232,19 @@
       <a href="mailto:fineremont@ukr.net">fineremont@ukr.net</a>
     </div>
     <div class="ftr__col">
-      <h3 class="ftr__h">Офіс</h3>
-      <p>03142, Київ, бульвар Академіка Вернадського 67, офіс 67<br>метро Академмістечко</p>
-      <a href="https://goo.gl/maps/57Sos8JWSKnxDTm36" target="_blank" rel="noopener">Показати на карті ↗</a>
-    </div>
-    <div class="ftr__col">
-      <h3 class="ftr__h">Розділи</h3>
-      <a href="#poslugy">Послуги</a>
-      <a href="#roboty">Роботи</a>
-      <a href="#proces">Як працюємо</a>
-      <a href="#vidguky">Відгуки</a>
+      <h3 class="ftr__h">Ми в мережі</h3>
+      <a href="https://www.facebook.com/profile.php?id=100006951046500" target="_blank" rel="noopener">Facebook ↗</a>
+      <a href="https://www.instagram.com/fineremont/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="https://fineremont.kiev.ua/" target="_blank" rel="noopener">fineremont.kiev.ua ↗</a>
     </div>
   </div>
-  <div class="wrap ftr__bot">
-    <span>© 2006–2026 Файний Ремонт · ФОП Серкиз В.Б.</span>
-    <span>Концепт головної сторінки</span>
-  </div>
+  <div class="wrap ftr__bot">© 2014–2026 Файний Ремонт</div>
 </footer>
 
-<a class="fab" href="viber://chat?number=%2B380974400700" aria-label="Написати у Viber">Viber</a>
+<div class="bar" id="bar" aria-label="Швидкий зв'язок">
+  <a class="btn btn--ghost" href="tel:+380974400700">Подзвонити</a>
+  <a class="btn" href="viber://chat?number=%2B380974400700">Viber</a>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>

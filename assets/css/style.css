@@ -228,7 +228,7 @@ html.rm .ring figure,html:not(.js) .ring figure{position:static;margin:0;flex:0 
   .ord__grid{grid-template-columns:1fr}
   .ftr__grid{grid-template-columns:1fr 1fr}
   .ftr__col--brand{grid-column:1/-1}
-  body{padding-bottom:calc(64px + env(safe-area-inset-bottom))}
+  .ftr{padding-bottom:calc(64px + 1.5rem + env(safe-area-inset-bottom))} /* room for the bottom bar, inside the footer colour */
   .bar{display:grid}
   .hdr.is-scrolled{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(10,10,11,.96)}
   .hdr.hdr--light.is-scrolled{background:rgba(245,245,247,.96)}

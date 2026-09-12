@@ -211,6 +211,10 @@ html.rm .ring figure{position:static;margin:0;flex:0 0 260px}
 .fab{display:none;position:fixed;right:16px;bottom:16px;z-index:800;padding:.85rem 1.2rem;border-radius:999px;background:#7360f2;color:#fff;font-weight:800;box-shadow:0 14px 30px -10px rgba(115,96,242,.8)}
 
 /* ===== RESPONSIVE ===== */
+@media (max-width:1280px) and (min-width:900px){
+  .stage{width:50%;--cw:240px;perspective-origin:60% 45%}
+  .hero__h{font-size:clamp(3rem,7vw,6rem)}
+}
 @media (max-width:1100px){
   .nav{display:none}
 }

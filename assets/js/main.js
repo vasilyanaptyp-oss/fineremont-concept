@@ -46,8 +46,9 @@
   function layout(i, n) {
     var m = isMobile();
     var t = (i - (n - 1) / 2);            // -3..3
+    var sx = m ? 62 : Math.min(165, window.innerWidth * 0.105); // keep the fan clear of the headline on narrow desktops
     return {
-      x: t * (m ? 62 : 165),
+      x: t * sx,
       y: Math.abs(t) * (m ? 12 : 26) - (m ? 0 : 24) + (i % 2 ? 18 : -18),
       z: -Math.abs(t) * (m ? 80 : 120),
       ry: t * -13,

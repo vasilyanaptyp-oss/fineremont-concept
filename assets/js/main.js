@@ -143,9 +143,8 @@
   }
   function placeRing() {
     var R = radius();
-    figs.forEach(function (f, i) { gsap.set(f, { rotateY: i * step, z: R, transformOrigin: '50% 50%' }); });
-    // Our ring rotates; figures sit on the cylinder: figure transform = rotateY(i*step) translateZ(R)
-    figs.forEach(function (f, i) { f.style.transform = 'translate3d(0,0,0) rotateY(' + (i * step) + 'deg) translateZ(' + R + 'px)'; });
+    // figures sit on the cylinder; the ring itself rotates
+    figs.forEach(function (f, i) { f.style.transform = 'rotateY(' + (i * step) + 'deg) translateZ(' + R + 'px)'; });
   }
   placeRing();
   window.addEventListener('resize', placeRing);
@@ -161,8 +160,18 @@
       f.style.filter = 'brightness(' + (1 - d * 0.5) + ')';
     });
   }
-  gsap.to(state, { rot: -360, ease: 'none',
-    scrollTrigger: { trigger: '.gal', start: 'top top', end: '+=180%', pin: '.gal__pin', scrub: 0.7, anticipatePin: 1, onUpdate: renderRing } });
+  mm.add('(min-width: 900px)', function () {
+    // desktop: pin the section and spin a full turn while it stays on screen
+    var t = gsap.to(state, { rot: -360, ease: 'none',
+      scrollTrigger: { trigger: '.gal', start: 'top top', end: '+=150%', pin: '.gal__pin', scrub: 0.7, anticipatePin: 1, onUpdate: renderRing } });
+    return function () { t.scrollTrigger && t.scrollTrigger.kill(); t.kill(); };
+  });
+  mm.add('(max-width: 899px)', function () {
+    // mobile: no pin (no dead space), half a turn while the section passes by; swipe does the rest
+    var t = gsap.to(state, { rot: -180, ease: 'none',
+      scrollTrigger: { trigger: '.gal', start: 'top bottom', end: 'bottom top', scrub: 0.5, onUpdate: renderRing } });
+    return function () { t.scrollTrigger && t.scrollTrigger.kill(); t.kill(); };
+  });
   renderRing();
 
   // drag / swipe
@@ -184,6 +193,17 @@
   gsap.from('.q', { y: 40, opacity: 0, stagger: .08, duration: 1, ease: 'expo.out', scrollTrigger: { trigger: '.rev__grid', start: 'top 80%', once: true } });
   gsap.from('.gar__i', { y: 30, opacity: 0, stagger: .08, duration: .9, ease: 'expo.out', scrollTrigger: { trigger: '.gar', start: 'top 80%', once: true } });
   gsap.from('.form', { y: 40, opacity: 0, duration: 1, ease: 'expo.out', scrollTrigger: { trigger: '.form', start: 'top 85%', once: true } });
+
+  /* ---------- Viber FAB: step aside where the page already offers Viber ---------- */
+  var fab = document.querySelector('.fab');
+  if (fab && 'IntersectionObserver' in window) {
+    var seen = new Set();
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { e.isIntersecting ? seen.add(e.target) : seen.delete(e.target); });
+      fab.classList.toggle('is-hidden', seen.size > 0);
+    }, { threshold: 0.05 });
+    document.querySelectorAll('.ord, .ftr').forEach(function (el) { io.observe(el); });
+  }
 
   window.addEventListener('load', function () { ScrollTrigger.refresh(); });
 })();

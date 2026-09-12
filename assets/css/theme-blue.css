@@ -1,0 +1,82 @@
+/* Варіант «кольори клієнта»: палітра старого сайту fineremont.kiev.ua
+   (блакитний #48afdb, темно-сірий #3b3e4f, світлі фони #f0f4f7). Підключається після style.css. */
+:root{
+  color-scheme:light;
+  --bg:#ffffff; --bg2:#f0f4f7; --fg:#3b3e4f; --mut:#75889c; --line:#d6dde3;
+  --acc:#2e9fd0;
+  --lbg:#f0f4f7; --lbg2:#ffffff; --lfg:#3b3e4f; --lmut:#75889c; --lline:#d6dde3;
+  --dark:#3b3e4f; --dark2:#464959;
+}
+body{background:var(--bg);color:var(--fg)}
+
+/* header */
+.hdr{color:var(--fg)}
+.hdr.is-scrolled{background:rgba(255,255,255,.86);border-color:var(--line)}
+.hdr.hdr--light.is-scrolled{background:rgba(255,255,255,.86)}
+.brand__logo{height:38px;width:auto;display:block}
+.nav{opacity:.85}
+.btn{background:var(--acc);color:#fff}
+.btn:hover{background:#2590c0}
+.btn--ghost{background:transparent;color:var(--fg);border-color:var(--line)}
+.btn--ghost:hover{background:var(--bg2)}
+.hdr--light .btn{background:var(--acc);color:#fff}
+.tel__ico{fill:var(--acc)}
+.mnav{background:#fff;color:var(--fg)}
+.mnav nav a{border-color:var(--line)}
+.mnav .btn--ghost{color:var(--fg)}
+:focus-visible{outline-color:var(--acc)}
+
+/* hero */
+.hero__pin{background:radial-gradient(55% 45% at 78% 42%,rgba(72,175,219,.16),transparent 62%),linear-gradient(180deg,#f7f9fb,#fff)}
+.hero__h .hl{color:var(--acc)}
+.hero__sub,.hero__tel{color:var(--mut)}
+.hero__tel b{color:var(--fg)}
+.c3{background:var(--bg2);box-shadow:0 24px 50px -24px rgba(59,62,79,.35)}
+
+/* facts / about */
+.facts{border-color:var(--line)}
+.fact b{color:var(--fg)}
+.eyebrow{color:var(--acc)}
+.chapter .eyebrow,.s i,.step__n{color:var(--acc)}
+.about__t{color:var(--mut)}
+
+/* light chapter */
+.chapter{background:var(--lbg)}
+.s{background:#fff;border-color:var(--line)}
+.step{background:#fff;border-color:var(--line);box-shadow:0 24px 50px -40px rgba(59,62,79,.3)}
+.step::after{background:var(--lbg)}
+
+/* gallery: the dark slate from the old site keeps the 3D ring readable */
+.gal{background:var(--dark);color:#fff}
+.gal .eyebrow{color:#8fd3f2}
+.gal .lead{color:#c9d2da}
+.ring figure{background:var(--dark2);box-shadow:0 24px 50px -28px rgba(0,0,0,.6)}
+.ring figcaption{background:rgba(59,62,79,.85);color:#fff}
+
+/* reviews */
+.rev{background:#fff}
+.q{background:var(--bg2);border-color:var(--line)}
+.q p{color:var(--fg)}
+.q footer b{color:var(--fg)}
+.q footer span{color:var(--mut)}
+
+/* order */
+.ord{background:var(--bg2);border-color:var(--line)}
+.form{background:#fff;border-color:var(--line)}
+.form input:not([type=checkbox]),.form textarea{background:#f7f9fb;border-color:var(--line);color:var(--fg)}
+.form input:focus,.form textarea:focus{border-color:var(--acc)}
+.check input{accent-color:var(--acc)}
+.form__ok{color:#2f9e63}
+
+/* footer */
+.ftr{background:var(--dark);color:#c9d2da;border-color:var(--dark2)}
+.ftr__h,.ftr__col a:hover,.ftr__col--brand .brand{color:#fff}
+.ftr__bot{border-color:var(--dark2)}
+
+/* mobile bar */
+.bar{background:rgba(255,255,255,.9);border-color:var(--line)}
+.bar .btn--ghost{color:var(--fg)}
+@media (max-width:899px){
+  .hdr.is-scrolled{background:rgba(255,255,255,.97)}
+  .hdr.hdr--light.is-scrolled{background:rgba(255,255,255,.97)}
+}

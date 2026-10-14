@@ -1,4 +1,4 @@
-/* Файний Ремонт v2 — animations. GSAP + ScrollTrigger (CDN). Degrades to static if GSAP is missing. */
+/* Файний Ремонт v2 - animations. GSAP + ScrollTrigger (CDN). Degrades to static if GSAP is missing. */
 (function () {
   'use strict';
   var doc = document.documentElement;
@@ -49,7 +49,7 @@
   ScrollTrigger.create({ trigger: '#chapter', start: 'top 60px', end: 'bottom 60px', toggleClass: { targets: '#hdr', className: 'hdr--light' } });
 
   /* ---------- HERO ---------- */
-  // The entrance (headline words, sub, cards flying in) is a CSS animation — see style.css.
+  // The entrance (headline words, sub, cards flying in) is a CSS animation - see style.css.
   // GSAP only owns the scroll-driven part, so its start values never depend on intro timing.
   var cards = { b: document.querySelector('.c3--b'), main: document.querySelector('.c3--main'), c: document.querySelector('.c3--c') };
   var stageInner = document.getElementById('stageInner');
